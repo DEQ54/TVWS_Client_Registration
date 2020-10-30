@@ -350,7 +350,7 @@ else
 		    var uniquePASS=uniquePassword;
 		    var link=document.createElement("a");
 		    link.href='data:text/txt,'+encodeURIComponent(" Username: "+uniqueID+"\n Password: "+uniquePASS);
-		    link.download="CLient Details.txt";
+		    link.download="Client Details.txt";
 		    link.click();  
             $("#form-data")[0].reset();
 		             }
