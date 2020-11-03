@@ -327,6 +327,19 @@ if ($("#antennaheighttype").val()==''){
 			$("#transmitterpowerError").html('*');
 		return false;
 	}
+	else if (isNaN($("#transmitterpower").val())) {
+		$("#transmitterpowerError").html('*');
+		return false;
+	}
+	else if ($("#antennaheight").val()=='') {
+
+			$("#antennaheightError").html('*');
+		return false;
+	}
+	else if (isNaN($("#antennaheight").val())) {
+		$("#antennaheightError").html('*');
+		return false;
+	}
 	else if ($("#operator").val()=='') {
 
 			$("#operatorError").html('*');
